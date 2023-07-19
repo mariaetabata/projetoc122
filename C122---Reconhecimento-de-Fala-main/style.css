@@ -1,0 +1,54 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(90deg, #de5aff 0%, #8d73ff 50%, #ffa2f7 100%);
+}
+h2{
+    color: #0500a3; 
+    font-family:'Great Vibes', cursive;
+    font-size: 50px;
+    margin-top: 10%;
+    position: relative;
+}
+h2::after{
+content: "voz";
+display: inline-block;
+animation: scrollAnimation 2s linear infinite;
+position:absolute;
+top: 40%;
+left: 89%;
+transform: translateX(-50%);
+}
+@keyframes scrollAnimation{
+    0%{
+        transform: translateX(20%);
+    }
+    100%{
+        transform: translateY(-70%);
+    }
+}
+button{
+    font-family:'Great Vibes', cursive;
+    border-color: #0015ff;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    color: #ffffff;
+    box-shadow: 0 0 40px 40px #0015ff inset, 0 0 0 0 #8800ff;
+    transition: 500ms;
+}
+button:hover{
+    box-shadow: 0 0 10px 0 #0015ff inset, 0 0 10px 4px #00ffea
+}
+canvas{
+    background-color: #c6fbff;
+    border-radius: 10px;
+    margin-bottom: 50;
+}
